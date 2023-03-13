@@ -1,11 +1,14 @@
 import React from 'react'
+import Card from '../card/Card';
 
+
+import './featured.scss'
 const featured = ({ type }) => {
 
     const data = [
         {
             id: 1,
-            img: "https://images.pexels.com/photos/1972115/pexels-photo-1972114.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622 .jpeg?auto=compress&cs=tinysrgb&w=1600",
             img2: "https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?auto=compress&cs=tinysrgb&w=1600",
             title: "Nike Air Max 270",
             isNew: true,
@@ -43,8 +46,13 @@ const featured = ({ type }) => {
         <div className='featuredProducts'>
             <div className="top">
                 <h1>{type} products</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum est aliquam reiciendis veritatis consectetur laborum maiores tenetur explicabo aspernatur eius labore nulla quod repellat ad porro, cumque vitae temporibus?
+                </p>
             </div>
-            <div className="bottom"></div>
+            <div className="bottom">
+                {data.map(item =>( <Card item={item} key={item.id} />))}
+            </div>
         </div>
     )
 }

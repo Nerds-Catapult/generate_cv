@@ -1,6 +1,5 @@
 .featuredProducts{
     margin: 100px 200px;
-
     .top{
         display: flex;
         align-items: center;
@@ -11,7 +10,7 @@
             flex: 2;
             text-transform: capitalize;
         }
-
+ 
         p{
             flex: 3;
             color: gray;
