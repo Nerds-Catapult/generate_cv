@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './slider.scss'
@@ -23,7 +23,7 @@ const Slider = () => {
     }
     return (
         <div className='slider'>
-            <div className="container" style={{ transform: `translateX(-${currentSlide * 100}vw )`}}>
+            <div className="container" style={{ transform: `translateX(-${currentSlide * 100}vw )` }}>
                 <img src={data[0]} />
                 <img src={data[1]} />
                 <img src={data[2]} />

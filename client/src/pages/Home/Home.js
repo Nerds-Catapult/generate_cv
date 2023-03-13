@@ -10,9 +10,9 @@ function Home() {
     <div className='home'>
       <Slider />
       <Featured type="featured" />
-      <Categories/>
-      <Featured type="trending"/>
-      <Contact/>
+      <Categories />
+      <Featured type="trending" />
+      <Contact />
     </div>
   )
 }
