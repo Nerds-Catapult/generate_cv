@@ -13,5 +13,14 @@
     "build:watch": "webpack --config webpack.config.js --mode development --watch"
   },
   "author": "Domains18",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express-validator": "^6.15.0",
+    "mongoose": "^7.0.3",
+    "sass": "^1.61.0",
+    "scss": "^0.2.4"
+  }
 }
