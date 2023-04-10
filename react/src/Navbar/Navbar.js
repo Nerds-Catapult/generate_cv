@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
+import { HiOutlineSearch } from 'react-icons/hi'
 import { MdRemoveShoppingCart } from 'react-icons/md';
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
                 </div>
                 <div className="search">
                     <input type="text" placeholder="Search" />
-                    <button>Search</button>
+                    <button> <HiOutlineSearch/> </button>
                 </div>
                 <div className="cart">
                     <MdRemoveShoppingCart />

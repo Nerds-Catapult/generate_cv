@@ -10,11 +10,13 @@
         gap: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         height: 200px;
+
         a {
             text-decoration: none;
             color: #000;
             font-size: 1rem;
             font-weight: 500;
+            color: #0000ff;
         }
 
         .logo {
@@ -47,14 +49,16 @@
 
         .affiliate {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 13%;
         }
+
         .search {
             display: flex;
             justify-content: space-between;
+            position: relative;
 
-            input{
+            input {
                 border: none;
                 outline: none;
                 font-size: 1rem;
@@ -65,27 +69,48 @@
                 border-radius: 8px;
                 width: 300px;
             }
-            button{
+            ::placeholder {
+                color: #000;
+                position: relative;
+                left: 40px;
+            }
+
+            button {
                 border: none;
-                background-color: #fff;
                 cursor: pointer;
+                background-color: transparent;
                 font-size: 1rem;
                 font-weight: 500;
                 color: #000;
                 transition: all 0.3s ease-in-out;
+                position: absolute;
+                left: 270px;
+                top: 9px;
 
-                &:hover{
+                &:hover {
                     color: #f00;
                 }
             }
         }
-        .user{
+
+        .user {
             display: flex;
             justify-content: space-between;
             gap: 20px;
 
-            &:hover{
-                color: #f00;
+            a {
+                transition: all 0.3s ease-in-out;
+                border: 1px #9dc2ff solid;
+                color: blue;
+                margin: auto;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                width: 90px;
+                &:hover {
+                    color: #f00;
+                }
             }
         }
     }
