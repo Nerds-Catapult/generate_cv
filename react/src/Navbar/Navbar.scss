@@ -1,0 +1,92 @@
+.navbar {
+
+    nav {
+        background-color: #fff;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        gap: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 200px;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #f00;
+            }
+
+            span {
+                font-size: 1rem;
+                font-weight: 400;
+                position: relative;
+                top: -5px;
+                left: -10px;
+            }
+        }
+
+        .affiliate {
+            display: flex;
+            justify-content: space-between;
+            width: 13%;
+        }
+        .search {
+            display: flex;
+            justify-content: space-between;
+
+            input{
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #000;
+                padding: 0.5rem 0;
+                background-color: #f4f4f4;
+                border-radius: 8px;
+                width: 300px;
+            }
+            button{
+                border: none;
+                background-color: #fff;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #000;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: #f00;
+                }
+            }
+        }
+        .user{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            &:hover{
+                color: #f00;
+            }
+        }
+    }
+}
