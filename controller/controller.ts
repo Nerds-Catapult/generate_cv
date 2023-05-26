@@ -58,3 +58,15 @@ export const login = async(req:Request, res:Response)=>{
     }
 }
 
+export const createTodo = async (req: Request, res: Response) => {
+    try {
+        const userId = req.session.user?._id
+        const { desc } = req.body;
+        const todo = new todoModel({ ...req.body, userId });
+        const result = await todo.save();
+        if (result) res.status(200).send({ success: " added todo" })
+        if(result) res.status(200).send({ error: " added todo"});
+    } catch (error) {
+        res.status(404).send({ error: " failed to do" })
+    }
+}
