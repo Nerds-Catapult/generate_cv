@@ -22,3 +22,17 @@ userRouter.get("/addTodo", async (req: Request, res: Response) => {
     const userData = req.session.user;
     res.send({ isVerify: true, message: "Add Todo", userData })
 });
+
+userRouter.get("/get", async (req: Request, res: Response) => { 
+    const userData = req.session.user;
+    const todos = await todoModel.find({userId: userData._id})
+    res.send({ isVerify: true, message: , todos })
+});
+
+
+userRouter.post("/register", register);
+userRouter.post("/login", login);
+userRouter.post("/createTodo", createTodo);
+
+
+export default userRouter;
