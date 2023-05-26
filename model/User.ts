@@ -1,6 +1,5 @@
-const IUser = require('../interface/todoInterface')
-const { model } = require('mongoose')
-
+import IUser from "../interface/userInterface";
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -17,5 +16,5 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-const User = model("User", userSchema);
-module.exports = { User}
+const User = mongoose.model("User", userSchema);
+export default User;

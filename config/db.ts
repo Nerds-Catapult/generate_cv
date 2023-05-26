@@ -1,16 +1,16 @@
-require('dotenv').config()
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 
 
-mongoose.set('strictQuery', true);
+
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGO_URI)
+        const conn = await mongoose.connect(process.env.MONGO_URI);
+        console.log(`Succesfully Pinged deployment at: ${conn.connection.host}`)
     } catch (error) {
         throw new Error(String(error))
     }
 }
 
 
-module.exports = connectDB
+export default connectDB

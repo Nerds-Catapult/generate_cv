@@ -1,7 +1,6 @@
-import { Schema } from "mongoose";
-
-const ITodo = require('../interface/todoInterface');
-
+import mongoose from "mongoose";
+import ITodo from "../interface/todoInterface";
+import { Schema } from 'mongoose';
 
 const todoSchema = new mongoose.Schema({
     id: {
@@ -19,4 +18,4 @@ const todoSchema = new mongoose.Schema({
 
 
 const todoModel = mongoose.model("Todos", todoSchema);
-module.exports = { todoModel }
+export default todoModel
