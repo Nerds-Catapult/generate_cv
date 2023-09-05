@@ -1,0 +1,12 @@
+{
+  "name": "generate_cv",
+  "version": "1.0.0",
+  "description": "This Project aims to generate automatically the cv and Resume\r ## Project Description\r This project is a web application that allows users to generate their cv and resume automatically. The user will be able to enter his information and the application will generate the cv and resume automatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
