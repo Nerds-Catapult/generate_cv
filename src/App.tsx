@@ -1,11 +1,11 @@
 import './App.css'
-import React from 'react'
+import Nav from './components/Nav/Nav'
 
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="container p-0 m-0 ">
+        <Nav/>
+    </div>
   )
 }

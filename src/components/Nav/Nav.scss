@@ -1,0 +1,22 @@
+.nav {
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        list-style: none;
+        margin-right: 20px;
+    }
+    .buttons{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
