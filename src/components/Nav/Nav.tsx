@@ -17,6 +17,7 @@ const Nav = () => {
                 <button>Sign In</button>
                 <button>Biuld My Resume</button>
             </div>
+            <hr/>
         </div>
     )
 }
