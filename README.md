@@ -8,6 +8,7 @@ CV Generator is a web application that allows users to create and customize thei
 
 - [Gibson Kemboi](https://github.com/Domains18)
 - [Shadrack Meoli](https://github.com/shadmeoli)
+- [Boniface Mbogho](https://github.com/CABON-TECH)
 
 This section lets readers of your README know who contributed to the project and provides links to the authors' GitHub profiles for more information about them.
 
@@ -16,8 +17,9 @@ This section lets readers of your README know who contributed to the project and
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
+   - [Frontend](#frontend)
+   - [Backend](#backend)
+
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
@@ -46,18 +48,21 @@ Before you begin, ensure you have met the following requirements:
 
 ```shell
 cd client
+
 ```
 
 2. Install dependencies:
 
 ```shell
 npm install
+
 ```
 
 3. Start the development server:
 
 ```shell
 npm run dev
+
 ```
 
 The frontend will be accessible at `http://localhost:3000`.
@@ -68,18 +73,21 @@ The frontend will be accessible at `http://localhost:3000`.
 
 ```shell
 cd server
+
 ```
 
 2. Install Go dependencies:
 
 ```shell
 go mod tidy
+
 ```
 
 3. Start the Go server:
 
 ```shell
 go run cmd/main.go
+
 ```
 
 The backend server will be accessible at `http://localhost:8080`.
@@ -88,9 +96,9 @@ The backend server will be accessible at `http://localhost:8080`.
 
 - `client`: Frontend directory containing the React application.
 - `server`: Backend directory containing the Go API and server.
-  - `api`: API logic and routes.
-  - `internal`: Internal packages, including database and middleware.
-  - `web`: Frontend assets (HTML, CSS, etc.).
+   - `api`: API logic and routes.
+   - `internal`: Internal packages, including database and middleware.
+   - `web`: Frontend assets (HTML, CSS, etc.).
 
 ## Technologies Used
 
