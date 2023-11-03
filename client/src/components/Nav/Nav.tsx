@@ -47,8 +47,10 @@ const Nav = () => {
         </a>
       </div>
       <div className="flex flex-row space-x-4">
-        <button>Sign In</button>
-        <button>Biuld My Resume</button>
+        <button className="text-[#42BDEF] hover:text-gray-800 ">log in</button>
+        <button className="bg-[#42BDEF] p-2 font-light rounded text-sm text-white hover:shadow-lg hover:animate-bounce transition ease-in-out duration-300">
+          start building
+        </button>
       </div>
       <hr />
     </div>
