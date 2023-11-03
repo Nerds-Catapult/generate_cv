@@ -1,12 +1,13 @@
 import React, { useState, useMemo } from "react";
+import logo from "../../assets/logo1.png";
 
 const Nav = () => {
   return (
     <div className="flex flex-row items-center justify-between pt-4 px-4 backdrop-blur bg-opacity-40 w-screen">
-      <a href="#"></a>
+      <a href="/"></a>
       <img
-        className="shadow-xl h-16 w-16 rounded-lg items-center justify-center"
-        src="../../assets/logo1.png"
+        className="cusor-pointer shadow-lg h-16 w-16 rounded-lg items-center justify-center"
+        src={logo}
       />
       <div className="flex flex-row space-x-6 w-[60%] items-center justify-center">
         <a
