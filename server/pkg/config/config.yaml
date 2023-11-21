@@ -1,0 +1,7 @@
+environment: development
+http_port: 5000
+grpc_port: 5001
+auth_secret : "secret"
+
+
+DATABASE_HOST: "localhost" // change this to your database host
