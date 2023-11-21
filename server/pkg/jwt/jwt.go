@@ -49,7 +49,7 @@ func GenerateRefreshToken(payload map[string]interface{}) string{
 	return token
 }
 
-func validateToken(jwtToken string)(map[string]interface{}, error){
+func ValidateToken(jwtToken string)(map[string]interface{}, error){
 	cfg := config.GetConfig()
 	cleanJWT := strings.Replace(jwtToken, "Bearer ", "", -1)
 	tokenData := jwt.MapClaims{}
