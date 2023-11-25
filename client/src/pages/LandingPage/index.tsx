@@ -5,14 +5,14 @@ const Landingpage = () => {
 
   const signupForm = () => {
     if (showForm) {
-          return (
-            <>
-              <View className="h-screen w-screen absolute flex items-center justify-center z-10 backdrop-blur"></View>
-            </>
-          );
-        } else {
-        return
-        }
+      return (
+        <>
+          <div className="h-screen w-screen absolute flex items-center justify-center z-10 backdrop-blur"></div>
+        </>
+      );
+    } else {
+      return;
+    }
   };
 
   return (
@@ -29,7 +29,7 @@ const Landingpage = () => {
         </p>
         <div className="w-screen flex justify-center items-center mt-10 space-x-2">
           <button
-            onPress={() => setShowForm(true)}
+            onPress={() => console.log("hello")}
             className="cursor-pointer hover:bg-pink-400 rounded bg-pink-500 p-2 text-white font-bold text-sm h-10"
           >
             Get started
@@ -40,9 +40,8 @@ const Landingpage = () => {
         </div>
 
         {/* place where where we will add our testimonials */}
-        {/* <h1 className="text-black font-bold mt-20">Our trusted clients</h1>
-        <div className="xs:w-[80%] w-screen h-auto md:h-[20%] mt-4 bg-gray-100 transition duration-500 ease-in-out transform">
-        </div> */}
+        <h1 className="text-black font-bold mt-20">Our trusted clients</h1>
+        <div className="xs:w-[80%] w-screen h-auto md:h-[20%] mt-4 bg-gray-100 transition duration-500 ease-in-out transform"></div>
       </div>
     </>
   );
