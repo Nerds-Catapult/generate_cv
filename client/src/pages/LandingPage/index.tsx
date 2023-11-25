@@ -1,20 +1,6 @@
 import React from "react";
 
 const Landingpage = () => {
-  const [showForm, setShowForm] = React.useState<boolean>(false);
-
-  const signupForm = () => {
-    if (showForm) {
-      return (
-        <>
-          <div className="h-screen w-screen absolute flex items-center justify-center z-10 backdrop-blur"></div>
-        </>
-      );
-    } else {
-      return;
-    }
-  };
-
   return (
     <>
       <div className="w-screen h-screen flex flex-col items-center">
@@ -28,12 +14,12 @@ const Landingpage = () => {
           Elevate Your Career Journey with Confidence!
         </p>
         <div className="w-screen flex justify-center items-center mt-10 space-x-2">
-          <button
-            onPress={() => console.log("hello")}
+          <a
+            href="/signup"
             className="cursor-pointer hover:bg-pink-400 rounded bg-pink-500 p-2 text-white font-bold text-sm h-10"
           >
             Get started
-          </button>
+          </a>
           <button className="hover:border-cyan-800 active:bg-pink-500 active:text-white rounded border-2 border-cyan-300 p-2 text-cyan-500 font-bold text-sm h-10">
             View plans
           </button>
