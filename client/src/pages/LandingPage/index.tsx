@@ -26,8 +26,14 @@ const Landingpage = () => {
         </div>
 
         {/* place where where we will add our testimonials */}
-        <h1 className="text-black font-bold mt-20">Our trusted clients</h1>
-        <div className="xs:w-[80%] w-screen h-auto md:h-[20%] mt-4 bg-gray-100 transition duration-500 ease-in-out transform"></div>
+        <h1 className="text-black font-bold mt-[10%]">Our trusted clients</h1>
+        <div className="xs:w-[80%] w-screen h-auto md:h-[20%] mt-4 bg-gray-100 transition duration-500 ease-in-out transform flex flex-row justify-between px-10 items-center">
+          <h1 className="font-bold text-gray-300 text-2xl animate-pulse text-center">Linked in</h1>
+          <h1 className="font-bold text-gray-300 text-2xl animate-pulse text-center">Vivo fashion group</h1>
+          <h1 className="font-bold text-gray-300 text-2xl animate-pulse text-center">Shopzetu</h1>
+          <h1 className="font-bold text-gray-300 text-2xl animate-pulse text-center">Huawei</h1>
+          <h1 className="font-bold text-gray-300 text-2xl animate-pulse text-center">Safaricom</h1>
+        </div>
       </div>
     </>
   );
