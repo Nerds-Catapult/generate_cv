@@ -33,7 +33,7 @@ const App = () => {
         { showNav && (
           <Nav />
         )}
-            <Landingpage />
+            <Signup/>
       </div>
   );
 }
