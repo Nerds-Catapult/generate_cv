@@ -1,5 +1,10 @@
 package models
 
+import (
+	"errors"
+	"github.com/generate_cv/pkg/image"
+)
+
 type User struct {
 	PersonalInfo struct {
 		Name      string `json:"name"`
@@ -77,5 +82,31 @@ type User struct {
 }
 
 func (u *User) Modify(dirname string, output string) error {
-	image
+	imageData := u.PersonalInfo.Picture
+	if imageData != ""{
+		var newImage string
+		checkUrl := image.IsUrl(imageData)
+		if checkUrl {
+			newImage, err := image.ImageFromUrl(imageData, dirname)
+			if err != nil {
+				return err
+			}
+			u.PersonalInfo.Picture = newImage
+			return err
+		}
+		if output == "app" && image.IsImageFileExist(imageData){
+			return nil
+		}
+		if output == "app" && !image.IsImageFileExist(imageData){
+			return errors.New("directory or file does not exist")
+		}
+
+		newImage, err := image.ImageFromBase64(imageData, dirname)
+		if err != nil {
+			return err
+		}
+		u.PersonalInfo.Picture = newImage
+		return err
+	}
+	return nil
 }
